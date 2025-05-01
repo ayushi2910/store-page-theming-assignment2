@@ -1,0 +1,143 @@
+/* Theme CSS Variables */
+:root {
+  /* Default Theme */
+  --primary: #0070f3;
+  --primary-deep: #0050b3;
+  --primary-mild: #e6f7ff;
+  
+  --secondary: #0ea5e9;
+  --secondary-deep: #0369a1;
+  --secondary-mild: #e0f2fe;
+  
+  --accent: #8b5cf6;
+  --accent-deep: #6d28d9;
+  --accent-mild: #ede9fe;
+  
+  --background: #ffffff;
+  --surface: #f9fafb;
+  
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  
+  --error: #ef4444;
+  --warning: #f59e0b;
+  --success: #10b981;
+  --info: #3b82f6;
+  
+  /* Typography */
+  --font-family-primary: 'Inter', sans-serif;
+  --font-family-secondary: 'Inter', sans-serif;
+  
+  /* Components */
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 1rem;
+  --border-radius-pill: 9999px;
+  
+  --box-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --box-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --box-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.dark {
+  --background: #121212;
+  --surface: #1e1e1e;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+}
+
+/* Organ Transplant Theme */
+.theme-organTransplant {
+  --primary: #005f73;
+  --primary-deep: #003d4d;
+  --primary-mild: #e0f2f7;
+  
+  --secondary: #0a9396;
+  --secondary-deep: #007278;
+  --secondary-mild: #e0f5f6;
+  
+  --accent: #94d2bd;
+  --accent-deep: #6eb89e;
+  --accent-mild: #eef8f5;
+  
+  --font-family-primary: 'Roboto', sans-serif;
+  --font-family-secondary: 'Roboto Condensed', sans-serif;
+}
+
+.theme-organTransplant .hero-organTransplant {
+  background-color: var(--primary);
+  background-image: linear-gradient(135deg, var(--primary) 0%, var(--primary-deep) 100%);
+}
+
+.theme-organTransplant .pattern-grid {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.2' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='1'/%3E%3Ccircle cx='13' cy='13' r='1'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Cosmetic Surgery Theme */
+.theme-cosmeticSurgery {
+  --primary: #d8a47f;
+  --primary-deep: #b7845e;
+  --primary-mild: #f9f3ee;
+  
+  --secondary: #c2a792;
+  --secondary-deep: #a38672;
+  --secondary-mild: #f7f3f0;
+  
+  --accent: #e9d8cc;
+  --accent-deep: #d6bfae;
+  --accent-mild: #fcf9f7;
+  
+  --font-family-primary: 'Playfair Display', serif;
+  --font-family-secondary: 'Montserrat', sans-serif;
+}
+
+.theme-cosmeticSurgery .hero-cosmeticSurgery {
+  background-color: var(--accent-mild);
+}
+
+/* Default Theme Hero */
+.hero-default {
+  background-color: var(--primary);
+  background-image: linear-gradient(90deg, var(--primary) 0%, var(--primary-deep) 100%);
+}
+
+/* Button Styles by Theme */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: var(--border-radius-md);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-deep);
+}
+
+.theme-organTransplant .btn {
+  font-family: var(--font-family-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.theme-cosmeticSurgery .btn {
+  transition: all 0.3s ease;
+}
+
+.theme-cosmeticSurgery .btn-primary {
+  background-color: var(--primary);
+  border: none;
+}
+
+.theme-cosmeticSurgery .btn-primary:hover {
+  background-color: var(--primary-deep);
+  box-shadow: var(--box-shadow-md);
+}

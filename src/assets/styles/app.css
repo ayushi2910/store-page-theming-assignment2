@@ -1,5 +1,53 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
-@import "./components/index.css";
-@import "./template/index.css";
-@import "./vendors/index.css";
-@import "./tailwind/index.css";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Import theme variables */
+@import './theme.css';
+
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Global styles */
+body {
+  font-family: var(--font-family-primary);
+  color: var(--text-primary);
+  background-color: var(--background);
+}
+
+/* Layout components */
+.layout-container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .layout-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Theme-specific global styles */
+.theme-organTransplant h1, 
+.theme-organTransplant h2, 
+.theme-organTransplant h3 {
+  font-family: var(--font-family-secondary);
+  font-weight: 700;
+}
+
+.theme-cosmeticSurgery h1, 
+.theme-cosmeticSurgery h2, 
+.theme-cosmeticSurgery h3 {
+  font-family: var(--font-family-primary);
+  font-weight: 600;
+}
+
+.theme-cosmeticSurgery p {
+  font-family: var(--font-family-secondary);
+}
